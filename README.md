@@ -179,7 +179,28 @@ npm start
 
 ## 📸 Screenshots
 
-(スクリーンショット追加予定)
+### 初期画面
+![Initial Screen](images/01_initial_screen.png)
+
+### 音声入力中
+![Voice Input](images/02_voice_input_recording.png)
+
+### テーマ検出と多次元分析
+![Theme Detection](images/03_theme_detection.png)
+
+### 不足視点の検出
+![Missing Perspectives](images/05_missing_perspectives.png)
+
+### マインドマップ - トピック別ビュー
+![Mindmap Topic View](images/06_mindmap_topic_view.png)
+
+### マインドマップ - 立場別ビュー
+![Mindmap Stance View](images/07_mindmap_stance_view.png)
+
+### 全体俯瞰
+![Overview](images/08_overview.png)
+
+
 
 ## 🎬 Demo
 
