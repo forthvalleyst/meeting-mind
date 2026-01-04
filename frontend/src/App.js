@@ -378,6 +378,10 @@ function App() {
             value={transcript}
             onChange={(e) => setTranscript(e.target.value)}
             placeholder="会議での発言を入力してください..."
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck="false"
           />
           
           <div className="voice-options">
