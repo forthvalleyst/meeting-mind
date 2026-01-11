@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import MindMap from './MindMap';
-const API_URL = process.env.REACT_APP_API_URL || 'https://meeting-mind-backend-776088039026.asia-northeast1.run.app';
+const API_URL = 'http://localhost:8080';//process.env.REACT_APP_API_URL || 'https://meeting-mind-backend-776088039026.asia-northeast1.run.app';
 
 function App() {
   const [transcript, setTranscript] = useState('');
@@ -189,7 +189,7 @@ function App() {
       const currentTheme = detectedTheme?.theme || theme?.theme || 'general';
       console.log('使用するテーマ:', currentTheme);
 
-      const response = await fetch(`${API_URL}`, {
+      const response = await fetch(`${API_URL}/detect-theme`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -271,7 +271,7 @@ function App() {
     try {
       console.log('サーバーに送信するテーマ:', themeToUse);
       
-      const response = await fetch(`${API_URL}`, {
+      const response = await fetch(`${API_URL}/analyze-gaps`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -306,7 +306,7 @@ function App() {
     try {
       console.log('トピック分類を実行中...');
       
-      const response = await fetch(`${API_URL}`, {
+      const response = await fetch(`${API_URL}/classify-topics`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -335,7 +335,7 @@ function App() {
     // 2発言以上で、まだテーマが検出されていない場合
     if (currentHistory.length >= 2 && !theme) {
       try {
-        const response = await fetch(`${API_URL}`, {
+        const response = await fetch(`${API_URL}/detect-theme`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

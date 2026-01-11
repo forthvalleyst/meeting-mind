@@ -1,3 +1,8 @@
+body {
+  min-width: 1200px;
+  overflow-x: auto; /* 横スクロール有効 */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -205,10 +210,11 @@
 /* 2カラムレイアウト */
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr !important;
   gap: 1rem;
   flex: 1;
   overflow: hidden;
+  min-width: 1200px; /* 追加 */
 }
 
 /* 左カラム (分析結果 + 不足視点) */
@@ -554,7 +560,7 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 1200px) {
+/*@media (max-width: 768px) {
   .content-grid {
     grid-template-columns: 1fr;
   }
@@ -562,4 +568,4 @@
   .right-column {
     max-height: 500px;
   }
-}
+}*/
