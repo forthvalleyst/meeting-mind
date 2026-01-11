@@ -87,9 +87,13 @@ D3.js を使った2種類のビュー:
   - 不足視点検出
 
 ### Deployment
-- Cloud Run (予定)
+- **フロントエンド:** Vercel
+- **バックエンド:** Google Cloud Run
 
 ## 🚀 Getting Started
+
+> **注意:** 本番環境は既にデプロイ済みです ([https://meeting-mind-eight.vercel.app](https://meeting-mind-eight.vercel.app))。
+> 以下はローカル開発環境のセットアップ手順です。
 
 ### Prerequisites
 
@@ -128,7 +132,7 @@ cd ../frontend
 npm install
 ```
 
-### Running the Application
+### Running the Application（ローカル）
 
 **ターミナル1 (バックエンド):**
 ```bash
@@ -145,6 +149,7 @@ npm start
 ```
 
 ブラウザで `http://localhost:3000` を開いてください。
+> **本番環境を試したい場合:** https://meeting-mind-eight.vercel.app にアクセスしてください。
 
 ## 📖 Usage
 
