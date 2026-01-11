@@ -92,7 +92,7 @@ D3.js を使った2種類のビュー:
 
 ## 🚀 Getting Started
 
-> **注意:** 本番環境は既にデプロイ済みです ([https://meeting-mind-eight.vercel.app](https://meeting-mind-eight.vercel.app))。
+> **注意:** 本番環境は既にデプロイ済みです 。
 > 以下はローカル開発環境のセットアップ手順です。
 
 ### Prerequisites
@@ -149,7 +149,6 @@ npm start
 ```
 
 ブラウザで `http://localhost:3000` を開いてください。
-> **本番環境を試したい場合:** https://meeting-mind-eight.vercel.app にアクセスしてください。
 
 ## 📖 Usage
 
