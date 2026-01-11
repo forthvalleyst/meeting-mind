@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import MindMap from './MindMap';
-const API_URL = 'http://localhost:8080';//process.env.REACT_APP_API_URL || 'https://meeting-mind-backend-776088039026.asia-northeast1.run.app';
+const API_URL = process.env.REACT_APP_API_URL || 'https://meeting-mind-backend-776088039026.asia-northeast1.run.app';//'http://localhost:8080';
 
 function App() {
   const [transcript, setTranscript] = useState('');
