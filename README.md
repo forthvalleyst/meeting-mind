@@ -208,11 +208,11 @@ npm start
 
 ## 🎬 Demo
 
-(デモ動画追加予定)
+デモ動画は[Zenn記事](https://zenn.dev/forthvalleyst/articles/473665cef04cff)をご覧ください
 
 ## 🏆 Hackathon
 
-このプロジェクトは [Google Cloud Agentic AI Hackathon 2026](https://events.withgoogle.com/google-cloud-agentic-ai-hackathon/) に提出予定です。
+このプロジェクトは [第4回 Agentic AI Hackathon with Google Cloud](https://events.withgoogle.com/google-cloud-agentic-ai-hackathon/) に提出予定です。
 
 ## 📝 License
 
